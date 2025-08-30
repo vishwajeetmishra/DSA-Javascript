@@ -35,6 +35,8 @@ console.log(twoSumBruteForce([4,5,6],10))
 
 // Optimized solution O(n)
 function twoSum(nums,target){
+    // edge cases
+    if(!nums || !nums.length || !target) return undefined;
     let seen = {};
     for(let i=0;i<nums.length;i++){
         let current = nums[i];
