@@ -16,7 +16,7 @@ Output: 3
 //linear search O(n)
 function linerSearch(nums,target){
     //edge cases
-    if(!nums || !nums.length || !target) return undefined;
+    if(!nums || nums.length === 0) return undefined;
     for(let i=0;i<nums.length;i++){
         if(nums[i] === target){
             return i;
