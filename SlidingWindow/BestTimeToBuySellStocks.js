@@ -32,6 +32,9 @@ console.log(maxProfit([10,1,5,6,7,1]));
 
 
 // sliding window approach
+// buyPrice acts like the left of the window.
+// currentPrice acts like the right of the window.
+// Window slides forward, updating minPrice and maxProfit.
 function maxProfit(prices){
     if(prices.length === 0) return 0;
     let profit = 0;
