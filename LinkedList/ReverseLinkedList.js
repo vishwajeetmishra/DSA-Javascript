@@ -34,7 +34,7 @@ function reverseList(head){
     while(currentNode){
         let next = currentNode.next;
         currentNode.next = previousNode; // flipping the pointer
-        previousNode = currentNode; // new head in first iteration
+        previousNode = currentNode; // new head on last iteration after reversing
         currentNode = next;
     }
     return previousNode; // new head after reversing
