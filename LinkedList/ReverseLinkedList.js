@@ -28,16 +28,16 @@ function reverseList(head){
     const listType = listTypeHelper(head);
     if(listType === null || listType === 0) return null;
 
-    let reversedNode = null;
+    let previousNode = null;
     let currentNode = head;
 
     while(currentNode){
         let next = currentNode.next;
-        currentNode.next = reversedNode; // flipping the pointer
-        reversedNode = currentNode; // new head in first iteration
+        currentNode.next = previousNode; // flipping the pointer
+        previousNode = currentNode; // new head in first iteration
         currentNode = next;
     }
-    return reversedNode; // new head after reversing
+    return previousNode; // new head after reversing
 }
 
 /*
