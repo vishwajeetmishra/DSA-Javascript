@@ -6,9 +6,7 @@ Example 1:
 
 Input: head = [0,1,2,3]
 
-Output: [3,2,1,0]
-Example 2:
-
+Output:
 Input: head = []
 
 Output: []
